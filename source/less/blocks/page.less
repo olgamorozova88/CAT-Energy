@@ -1,0 +1,35 @@
+.page {
+  height: 100%;
+  font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: @basic-black;
+}
+
+.page__body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  display: gird;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.page__header {
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+   }
+
+   @media (min-width: @desktop-width) {
+    margin-bottom: 82px;
+    max-height: 720px;
+    background-image: url("../img/img/index-bg-desktop.jpg"),
+    linear-gradient(to right, transparent 0, transparent 50%, #64A73C 50%, #64A73C 100%);
+    background-size: 720px 694px, 100%;
+    background-repeat: no-repeat;
+    background-position: right top, center;
+  }
+}

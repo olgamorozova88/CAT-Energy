@@ -9,61 +9,81 @@
   <link rel="icon" href="img/ico/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/ico/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
   <title>Cat Energy - функциональное питание для котов</title>
 </head>
 
 <body class="page__body">
 
-  <header class="page__header header">
-    <div class="logo header__logo">
-      <a class="logo__link">
-        <img class="logo__image" src="https://via.placeholder.com/34x38" alt="Логотип-картинка Cat Energy" width="34"
-          height="38">
-        <img class="logo__text" src="https://via.placeholder.com/101x18" alt="Логотип-текст Cat Energy" width="101"
-          height="18">
-      </a>
+  <header class="page__header">
+    <div class="container">
+      <div class="header header--top">
+        <div class="logo logo--header">
+          <a class="logo__link">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+              <img class="logo__image" src="img/logo/logo-mobile.svg" alt="Логотип Cat Energy" width="34"
+                height="38">
+            </picture>
+            <img class="logo__text logo__text--header" src="img/logo/logo-text.svg" alt="Cat Energy"
+              width="101" height="18">
+          </a>
+        </div>
+        <nav class="main-nav main-nav--open main-nav--nojs">
+          <button class="main-nav__toggle" type="button" aria-label="Показать меню"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" aria-label="Показать меню"></button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+
+    <section class="promo">
+      <div class="container">
+        <div class="promo__content">
+          <h2 class="promo__title">Функциональное<br>питание для котов</h2>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          <picture class="promo__image-wrapper">
+            <source media="(min-width: 1440px)" srcset="img/img/can-desktop.png 1x, img/img/can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/img/can-tablet.png 1x, img/img/can-tablet@2x.png 2x">
+            <img class="promo__image" src="img/img/can-mobile.png" srcset="img/img/can-mobile@2x.png 2x"
+              alt="Упаковка рациона питания с курицей объемом 500г" width="280" height="270">
+          </picture>
+          <a class="promo__button button button--green" href="form.html">Подобрать программу</a>
+        </div>
+      </div>
+    </section>
   </header>
 
   <main class="page__main">
     <h1 class="visually-hidden">Интернет-магазин питания для котов</h1>
-    <section class="promo">
-      <h2 class="promo__title">Функциональное питание для котов</h2>
-      <p class="promo__slogan">Занялся собой? Займись котом!</p>
-      <img class="promo__image" src="https://via.placeholder.com/280x270"
-        alt="Упаковка рациона питания с курицей объемом 500г" width="280"
-        height="270">
-      <a class="promo__button button button--green" href="form.html">Подобрать программу</a>
-    </section>
 
     <section class="programs">
       <h2 class="visually-hidden">Программы питания</h2>
-      <article class="programs__item program program--slim">
-        <h3 class="program__title">Похудение</h3>
-        <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
-          на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="program__link" href="catalog.html">Каталог Slim</a>
-      </article>
-      <article class="programs__item program program--pro">
-        <h3 class="program__title">Набор массы</h3>
-        <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
-          поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="program__link" href="catalog.html">Каталог Pro</a>
-      </article>
+      <div class="container programs__layout">
+        <article class="programs__item program program--slim">
+          <h3 class="program__title">Похудение</h3>
+          <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+            Пора
+            на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="program__link" href="catalog.html">Каталог Slim</a>
+        </article>
+        <article class="programs__item program program--pro">
+          <h3 class="program__title">Набор массы</h3>
+          <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+            поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="program__link" href="catalog.html">Каталог Pro</a>
+        </article>
+      </div>
     </section>
 
     <section class="advantages">
@@ -109,7 +129,8 @@
         <div class="slider__images">
           <img class="slider__image slider__image--before" src="https://via.placeholder.com/311x232"
             alt="Кот с избыточным весом" width="311" height="232">
-          <img class="slider__image slider__image--slim" src="https://via.placeholder.com/251x240" alt="СТройный кот" width="251" height="240">
+          <img class="slider__image slider__image--slim" src="https://via.placeholder.com/251x240" alt="СТройный кот"
+            width="251" height="240">
         </div>
         <button class="slider__button slider__button--before" type="button">Было</button>
         <input class="slider__range" type="range">
@@ -186,6 +207,22 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const mainNav = document.querySelector(".main-nav");
+    const navToggle = document.querySelector(".main-nav__toggle");
+
+    mainNav.classList.remove("main-nav--nojs");
+    mainNav.classList.remove("main-nav--open");
+
+    navToggle.addEventListener("click", function () {
+      if (mainNav.classList.contains("main-nav--open")) {
+        mainNav.classList.remove("main-nav--open");
+      } else {
+        mainNav.classList.add("main-nav--open");
+      }
+    })
+  </script>
 </body>
 
 </html>
