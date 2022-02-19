@@ -5,14 +5,13 @@
   font-weight: 400;
   line-height: 18px;
   color: @basic-black;
-  overflow-x: hidden;
 }
 
 .page__body {
   min-width: 320px;
   min-height: 100%;
   margin: 0;
-  display: gird;
+  display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
@@ -20,18 +19,24 @@
 .page__header {
   margin-bottom: 22px;
 
+  &--inner {
+    margin-bottom: 26px;
+  }
+
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
    }
 
    @media (min-width: @desktop-width) {
-    margin-bottom: 82px;
-    max-height: 720px;
-    background-image: url("../img/img/index-bg-desktop.jpg"),
-    linear-gradient(to right, transparent 0, transparent 50%, @bg-green-desktop 50%, @bg-green-desktop 100%);
-    background-size: 720px 694px, 100%;
-    background-repeat: no-repeat;
-    background-position: right top, center;
+     &--main {
+      margin-bottom: 82px;
+      max-height: 720px;
+      background-image: url("../img/img/index-bg-desktop.jpg"),
+      linear-gradient(to right, transparent 0, transparent 50%, @bg-green-desktop 50%, @bg-green-desktop 100%);
+      background-size: 720px 694px, 100%;
+      background-repeat: no-repeat;
+      background-position: right top, center;
+     }
   }
 }
 
@@ -42,3 +47,27 @@
     padding: 55px 0 57px;
   }
 }
+
+.page__title {
+  margin: 0;
+  margin-bottom: 37px;
+  font: inherit;
+  font-size: 36px;
+  line-height: 36px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 55px;
+    margin-bottom: 54px;
+    padding-left: 40px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 70px;
+    margin-bottom: 56px;
+    padding-left: 0;
+  }
+}
+
+

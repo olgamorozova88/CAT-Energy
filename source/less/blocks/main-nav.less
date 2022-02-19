@@ -89,6 +89,16 @@
   @media (min-width: @tablet-width) {
     padding-bottom: 10px;
   }
+
+  @media (min-width: @desktop-width) {
+    &--inner .main-nav__link {
+      color: @basic-black;
+
+      &--active {
+        border-color: @basic-green;
+      }
+    }
+  }
 }
 
 .main-nav__link {

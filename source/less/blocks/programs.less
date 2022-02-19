@@ -6,7 +6,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 31px;
   }
 }
 
@@ -21,8 +21,10 @@
 .programs__item {
   margin-bottom: 20px;
 
-  &:last-child {
-    margin-bottom: 0;
+  @media (max-width: @mobile-width-only) {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -30,6 +32,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 }
