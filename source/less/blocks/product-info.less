@@ -1,0 +1,37 @@
+.product-info__list {
+  margin: 0;
+}
+
+.product-info__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: @heavy-grey;
+
+  & dd {
+    margin: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 7px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    border-bottom: 1px solid @frame-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    & dt {
+      width: 65%;
+    }
+
+    & dd {
+      width: 35%;
+    }
+  }
+}
+
+
