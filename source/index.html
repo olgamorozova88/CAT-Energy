@@ -52,6 +52,11 @@
           <h2 class="promo__title">Функциональное<br>питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture class="promo__image-wrapper">
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/webp/can-desktop.webp 1x, img/webp/can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/webp/can-tablet.webp 1x, img/webp/can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp/can-mobile.webp 1x, img/webp/can-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/img/can-desktop.png 1x, img/img/can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/img/can-tablet.png 1x, img/img/can-tablet@2x.png 2x">
             <img class="promo__image" src="img/img/can-mobile.png" srcset="img/img/can-mobile@2x.png 2x"
@@ -134,14 +139,30 @@
         <div class="story__slider slider">
           <div class="slider__images">
             <picture class="slider__images-wrapper">
-              <source media="(min-width: 1440px)" srcset="img/img/cat-before-desktop_new.png">
-              <source media="(min-width: 768px)" srcset="img/img/cat-before-tablet.png">
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/webp/cat-before-desktop.webp 1x, img/webp/cat-before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/webp/cat-before-tablet.webp 1x, img/webp/cat-before-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/webp/cat-before-mobile.webp 1x, img/webp/cat-before-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/img/cat-before-desktop.png, img/img/cat-before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/img/cat-before-tablet.png, img/img/cat-before-tablet@2x.png 2x">
               <img class="slider__image slider__image--before" src="img/img/cat-before-mobile.png"
                 srcset="img/img/cat-before-mobile@2x.png 2x" alt="Кот с избыточным весом" width="310" height="240">
             </picture>
             <picture class="slider__images-wrapper">
-              <source media="(min-width: 1440px)" srcset="img/img/cat-after-desktop_new.png">
-              <source media="(min-width: 768px)" srcset="img/img/cat-after-tablet.png">
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/webp/cat-after-desktop.webp 1x, img/webp/cat-after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/webp/cat-after-tablet.webp 1x, img/webp/cat-after-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/webp/cat-after-mobile.webp 1x, img/webp/cat-after-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/img/cat-after-desktop.png, img/img/cat-after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/img/cat-after-tablet.png, img/img/cat-after-tablet@2x.png 2x">
               <img class="slider__image slider__image--after" src="img/img/cat-after-mobile.png"
                 srcset="img/img/cat-after-mobile@2x.png 2x" alt="Стройный кот" width="310" height="240">
             </picture>
@@ -192,21 +213,24 @@
         <div class="social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"
+                aria-label="HTML Academy ВКонтакте">
                 <svg width="23" height="13">
                   <use xlink:href="img/icons/sprite.svg#social-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--ig" href="https://www.instagram.com/htmlacademy">
+              <a class="social__link social__link--ig" href="https://www.instagram.com/htmlacademy"
+                aria-label="HTML Academy В Instagram">
                 <svg width="16" height="16">
                   <use xlink:href="img/icons/sprite.svg#social-ig"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">
+              <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy"
+                aria-label="HTML Academy на Facebook">
                 <svg width="13" height="20">
                   <use xlink:href="img/icons/sprite.svg#social-fb"></use>
                 </svg>
@@ -231,4 +255,5 @@
   <script src="js/main.js"></script>
   <script src="js/slider.js"></script>
 </body>
+
 </html>
