@@ -1,4 +1,4 @@
-/* const mainNav = document.querySelector('.main-nav');
+const mainNav = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
 const logo = document.querySelector('.logo');
 
@@ -17,4 +17,4 @@ navToggle.addEventListener('click', function () {
   } else {
     logo.classList.add('logo--closed-nav');
   }
-}); */
+});

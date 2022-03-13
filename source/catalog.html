@@ -9,7 +9,11 @@
   <link rel="icon" href="img/ico/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/ico/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin="anonymous">
   <title>Cat Energy - Подбор программы</title>
 </head>
 
@@ -59,6 +63,9 @@
             <article class="product">
               <div class="product__photo">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/webp/chicken500-tablet.webp 1x, img/webp/chicken500-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/chicken500.webp 1x, img/webp/chicken500@2x.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/img/chicken500-tablet.png 1x, img/img/chicken500-tablet@2x.png 2x">
                   <img class="product__image product__image--small" src="img/img/chicken500.png"
@@ -93,6 +100,9 @@
             <article class="product">
               <div class="product__photo">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/webp/chicken1000-tablet.webp 1x, img/webp/chicken1000-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/chicken1000.webp 1x, img/webp/chicken1000@2x.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/img/chicken1000-tablet.png 1x, img/img/chicken1000-tablet@2x.png 2x">
                   <img class="product__image product__image--big" src="img/img/chicken1000.png"
@@ -127,6 +137,9 @@
             <article class="product">
               <div class="product__photo">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/webp/fish500-tablet.webp 1x, img/webp/fish500-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/fish500.webp 1x, img/webp/fish500@2x.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/img/fish500-tablet.png 1x, img/img/fish500-tablet@2x.png 2x">
                   <img class="product__image product__image--small" src="img/img/fish500.png"
@@ -161,6 +174,9 @@
             <article class="product">
               <div class="product__photo">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/webp/fish1000-tablet.webp 1x, img/webp/fish1000-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/fish1000.webp 1x, img/webp/fish1000@2x.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/img/fish1000-tablet.png 1x, img/img/fish1000-tablet@2x.png 2x">
                   <img class="product__image product__image--big" src="img/img/fish1000.png"
@@ -195,6 +211,9 @@
             <article class="product">
               <div class="product__photo">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/webp/buckwheat500-tablet.webp 1x, img/webp/buckwheat500-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/buckwheat500.webp 1x, img/webp/buclwheat500@2x.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/img/buckwheat500-tablet.png 1x, img/img/buckwheat500-tablet@2x.png 2x">
                   <img class="product__image product__image--small" src="img/img/buckwheat500.png"
@@ -229,6 +248,9 @@
             <article class="product">
               <div class="product__photo">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/webp/buckwheat1000-tablet.webp 1x, img/webp/buckwheat1000-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/buckwheat1000.webp 1x, img/webp/buckwheat1000@2x.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/img/buckwheat1000-tablet.png 1x, img/img/buckwheat1000-tablet@2x.png 2x">
                   <img class="product__image product__image--big" src="img/img/buckwheat1000.png"
@@ -263,6 +285,9 @@
             <article class="product">
               <div class="product__photo">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/webp/rice500-tablet.webp 1x, img/webp/rice500-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/rice500.webp 1x, img/webp/rice500@2x.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/img/rice500-tablet.png 1x, img/img/rice500-tablet@2x.png 2x">
                   <img class="product__image product__image--small" src="img/img/rice500.png"
@@ -434,8 +459,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
-  <script src="js/form.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
